@@ -1,137 +1,1102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bukhari SEO — SEO, Digital Marketing & Growth</title>
-<meta name="description" content="Bukhari SEO provides practical SEO, Google, AI, digital marketing and blogging guides for businesses, creators and website owners.">
-<meta name="keywords" content="SEO Pakistan, SEO Lahore, digital marketing, Google SEO, AI SEO, local SEO, blogging">
-<meta name="author" content="Bukhari SEO">
-<meta name="theme-color" content="#0b1220">
-<meta property="og:title" content="Bukhari SEO — SEO, Digital Marketing & Growth">
-<meta property="og:description" content="Practical SEO and digital marketing guides that help websites grow.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.bukhariseo.pk/">
+{{ define "main" }}
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#0f172a;background:#fff;line-height:1.65}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}.topbar{background:#0b1220;color:#cbd5e1;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:20px}header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:25px;letter-spacing:-1px}.logo span{color:#2563eb}nav{display:flex;align-items:center;gap:27px;font-weight:650;font-size:14px}nav a:hover{color:#2563eb}.nav-btn{background:#0f172a;color:white;padding:11px 17px;border-radius:9px}.menu{display:none;border:0;background:none;font-size:28px}.hero{padding:82px 0 70px;background:linear-gradient(180deg,#f8fbff 0%,#fff 100%)}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.badge,.eyebrow,.tag{display:inline-block;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.badge{color:#2563eb;background:#eff6ff;border:1px solid #dbeafe;border-radius:999px;padding:7px 12px}.hero h1{font-size:clamp(42px,5.5vw,68px);line-height:1.03;letter-spacing:-.055em;margin:20px 0}.hero p{font-size:19px;color:#64748b;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:10px;font-weight:750}.primary{background:#2563eb;color:#fff}.secondary{border:1px solid #cbd5e1;background:#fff}.hero-image{position:relative}.hero-image>img{width:100%;height:440px;object-fit:cover;border-radius:22px;box-shadow:0 30px 70px rgba(15,23,42,.16)}.hero-card{position:absolute;left:-28px;bottom:-25px;background:#fff;padding:20px 22px;border-radius:15px;box-shadow:0 18px 50px rgba(15,23,42,.16);max-width:300px}.hero-card strong{display:block;font-size:18px;line-height:1.25;margin:7px 0}.muted{color:#64748b}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e2e8f0;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;margin-top:-25px;position:relative}.stat{background:white;padding:22px}.stat b{font-size:22px;display:block}.stat span{font-size:13px;color:#64748b}.section{padding:85px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.section-head h2{font-size:36px;line-height:1.12;letter-spacing:-.035em;margin:7px 0 0}.section-head>p{max-width:480px;color:#64748b;margin:0}.eyebrow{color:#2563eb}.feature{display:grid;grid-template-columns:1.1fr 1fr;background:#f8fafc;border:1px solid #e2e8f0;border-radius:22px;overflow:hidden}.feature-img img{width:100%;height:390px;object-fit:cover}.feature-body{padding:42px}.feature-body h3{font-size:32px;line-height:1.15;margin:13px 0}.read{font-weight:800;color:#2563eb}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border:1px solid #e2e8f0;border-radius:17px;overflow:hidden;background:#fff;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(15,23,42,.09)}.card-img img{width:100%;height:210px;object-fit:cover;display:block}.card-body{padding:22px}.tag{color:#2563eb}.card h3{font-size:21px;line-height:1.25;margin:9px 0}.card h3 a:hover{color:#2563eb}.card .muted{font-size:14px}.meta{display:flex;justify-content:space-between;border-top:1px solid #e5e7eb;margin-top:17px;padding-top:13px;color:#94a3b8;font-size:12px}.search{margin:0 0 25px}.search input{width:100%;padding:14px 16px;border:1px solid #cbd5e1;border-radius:10px;font-size:15px;outline:none}.search input:focus{border-color:#2563eb;box-shadow:0 0 0 3px #dbeafe}.categories{background:#f8fafc}.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.cat{background:#fff;border:1px solid #e2e8f0;border-radius:15px;padding:25px}.cat:hover{border-color:#93c5fd}.cat-icon{font-size:28px}.cat h3{margin:10px 0 5px}.cat p{margin:0;color:#64748b;font-size:14px}.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-box{background:#eff6ff;border:1px solid #dbeafe;padding:35px;border-radius:20px}.about h2{font-size:34px;line-height:1.15}.newsletter{background:#0b1220;color:#fff;border-radius:24px;padding:48px}.newsletter-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.newsletter h2{font-size:34px;line-height:1.15;margin:8px 0}.newsletter p{color:#cbd5e1}.form{display:flex;background:#fff;padding:6px;border-radius:11px}.form input{min-width:0;flex:1;border:0;outline:0;padding:11px}.form button{border:0;background:#2563eb;color:#fff;padding:0 18px;border-radius:8px;font-weight:750}footer{background:#080d18;color:#94a3b8;padding:55px 0 20px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:35px}.footer-grid h3{color:#fff;margin-top:0}.footer-grid a{display:block;margin:8px 0}.footer-grid a:hover{color:#fff}.copyright{border-top:1px solid #1e293b;margin-top:40px;padding-top:18px;font-size:13px}.whatsapp{position:fixed;right:20px;bottom:20px;z-index:100;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.2)}
-@media(max-width:850px){.hero-grid,.feature,.about,.newsletter-grid{grid-template-columns:1fr}.hero-image>img{height:330px}.hero-card{left:15px}.grid{grid-template-columns:repeat(2,1fr)}.cat-grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}nav{display:none}.menu{display:block}.topbar .container{justify-content:center}.topbar span:last-child{display:none}}
-@media(max-width:560px){.hero{padding:55px 0}.section{padding:60px 0}.hero h1{font-size:43px}.grid,.cat-grid,.stats,.footer-grid{grid-template-columns:1fr}.section-head{display:block}.section-head>p{margin-top:12px}.newsletter{padding:30px 22px}.form{display:block;background:transparent;padding:0}.form input,.form button{width:100%;height:48px;margin-top:8px;border-radius:8px}.feature-body{padding:28px}.feature-img img{height:260px}}
-</style>
-</head>
-<body>
-<div class="topbar"><div class="container"><span>Practical SEO & digital marketing insights</span><span>For businesses, creators & website owners</span></div></div>
-<header><div class="container nav">
-<a class="logo" href="/">Bukhari<span>SEO</span></a>
-<button class="menu" onclick="document.querySelector('nav').style.display=document.querySelector('nav').style.display==='flex'?'none':'flex'">☰</button>
-<nav>
-<a href="#latest">Latest</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#newsletter">Newsletter</a><a class="nav-btn" href="#contact">Work With Us</a>
-</nav></div></header>
-
-<main>
-<section class="hero"><div class="container hero-grid">
-<div>
-<span class="badge">● SEO • MARKETING • AI • GROWTH</span>
-<h1>Grow your website. <span style="color:#2563eb">Get found.</span> Get results.</h1>
-<p>Clear, practical guides on SEO, Google, digital marketing, AI and blogging — without the confusing jargon.</p>
-<div class="actions"><a class="btn primary" href="#latest">Explore Articles →</a><a class="btn secondary" href="#categories">Browse Topics</a></div>
-</div>
-<div class="hero-image">
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85" alt="SEO analytics and digital marketing growth">
-<div class="hero-card"><span class="tag">FEATURED GUIDE</span><strong>SEO, Marketing & Growth</strong><div class="muted">Practical strategies to help your website get found, attract visitors and grow.</div></div>
-</div>
-</div></section>
-
-<section class="container"><div class="stats">
-<div class="stat"><b>SEO</b><span>Search visibility & rankings</span></div>
-<div class="stat"><b>AI</b><span>Smarter content workflows</span></div>
-<div class="stat"><b>Google</b><span>Search & local growth</span></div>
-<div class="stat"><b>Pakistan</b><span>Practical local insights</span></div>
-</div></section>
-
-<section class="section" id="latest"><div class="container">
-<div class="section-head"><div><div class="eyebrow">Featured</div><h2>Start with the guides</h2></div><p>Evergreen resources designed to answer real search questions and help you take action.</p></div>
-<article class="feature">
-<div class="feature-img"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85" alt="Digital marketing strategy"></div>
-<div class="feature-body"><span class="tag">FEATURED ARTICLE</span><h3>The Complete Guide to SEO in 2026</h3><p class="muted">Learn how modern SEO works, what matters for Google rankings, how content and technical SEO work together, and where AI fits into a sustainable growth strategy.<a class="read" href="/post/seo-in-2026/">Read the complete guide →</a></div>
-</article>
-</div></section>
-
-<section class="section" id="articles"><div class="container">
-<div class="section-head"><div><div class="eyebrow">Latest stories</div><h2>Fresh ideas for your website</h2></div><p>Practical knowledge covering search, content, AI, local visibility and digital growth.</p></div>
-<div class="search"><input id="search" type="search" placeholder="Search articles and topics..." oninput="filterCards()"></div>
-<div class="grid" id="cardGrid">
-<article class="card" data-title="complete seo guide search engine optimization">
-<div class="card-img"><img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=900&q=85" alt="Search engine optimization"></div>
-<div class="card-body"><span class="tag">SEO</span><h3><a href="/post/seo-in-2026/">The Complete Guide to SEO in 2026</a></h3><p class="muted">Understand keywords, on-page SEO, technical SEO, links and content strategy from the ground up.</p><div class="meta"><span>SEO guide</span><span>Bukhari SEO</span></div></div></article>
-<article class="card" data-title="google seo ranking">
-<div class="card-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85" alt="SEO analytics dashboard"></div>
-<div class="card-body"><span class="tag">GOOGLE</span><h3><a href="#contact">How to Improve Your Google Rankings</a></h3><p class="muted">A practical framework for improving relevance, helpfulness, technical quality and user experience.</p><div class="meta"><span>Google SEO</span><span>Bukhari SEO</span></div></div></article>
-<article class="card" data-title="ai seo artificial intelligence">
-<div class="card-img"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85" alt="Artificial intelligence and SEO"></div>
-<div class="card-body"><span class="tag">AI & SEO</span><h3><a href="#contact">AI for Modern SEO</a></h3><p class="muted">Use AI for research, ideas, outlines and productivity while keeping your content useful and original.</p><div class="meta"><span>AI strategy</span><span>Bukhari SEO</span></div></div></article>
-<article class="card" data-title="local seo google business profile">
-<div class="card-img"><img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=900&q=85" alt="Local business and local SEO"></div>
-<div class="card-body"><span class="tag">LOCAL SEO</span><h3><a href="#contact">Local SEO for Small Businesses</a></h3><p class="muted">Build local visibility with Google Business Profile, local content, reviews and consistent business information.</p><div class="meta"><span>Local SEO</span><span>Pakistan</span></div></div></article>
-<article class="card" data-title="content marketing blogging">
-<div class="card-img"><img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=85" alt="Content marketing and blogging"></div>
-<div class="card-body"><span class="tag">CONTENT</span><h3><a href="#contact">Content That Attracts Search Traffic</a></h3><p class="muted">Turn real customer questions into useful articles that can earn visibility and build trust over time.</p><div class="meta"><span>Content</span><span>Bukhari SEO</span></div></div></article>
-<article class="card" data-title="digital marketing growth">
-<div class="card-img"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=85" alt="Digital marketing growth strategy"></div>
-<div class="card-body"><span class="tag">MARKETING</span><h3><a href="#contact">Digital Marketing That Converts</a></h3><p class="muted">Combine search, content, social and conversion strategy into a practical growth system.</p><div class="meta"><span>Growth</span><span>Bukhari SEO</span></div></div></article>
-</div>
-<div id="noResults" style="display:none;text-align:center;margin-top:25px;color:#64748b">No matching articles found.</div>
-</div></section>
-
-<section class="section categories" id="categories"><div class="container">
-<div class="eyebrow">Explore topics</div><h2>Learn what you need, when you need it.</h2>
-<div class="cat-grid">
-<a class="cat" href="#articles"><div class="cat-icon">🔎</div><h3>SEO</h3><p>On-page, technical, content and search strategy.</p></a>
-<a class="cat" href="#articles"><div class="cat-icon">📍</div><h3>Local SEO</h3><p>Google Business Profile and local visibility.</p></a>
-<a class="cat" href="#articles"><div class="cat-icon">🤖</div><h3>AI & SEO</h3><p>AI tools, workflows and changing search.</p></a>
-<a class="cat" href="#articles"><div class="cat-icon">📈</div><h3>Digital Marketing</h3><p>Content, social, conversion and growth.</p></a>
-</div></div></section>
-
-<section class="section" id="about"><div class="container about">
-<div class="about-box"><div class="eyebrow">About Bukhari SEO</div><h2>Practical knowledge, not marketing fluff.</h2><p class="muted">Bukhari SEO is a publication focused on actionable search and digital marketing knowledge for businesses, website owners and creators.</p><a class="read" href="#contact">Talk to us →</a></div>
-<div><h2>Built for readers first.</h2><p class="muted">Useful articles stay at the center, with clear categories, strong visuals, readable typography, responsive layouts and a modern professional identity.</p><p class="muted">From SEO and Google to AI, local search and content marketing, the goal is simple: explain what matters and show you what to do next.</p></div>
-</div></section>
-
-<section class="section" id="newsletter"><div class="container"><div class="newsletter"><div class="newsletter-grid">
-<div><div class="eyebrow" style="color:#93c5fd">Stay ahead</div><h2>Get useful SEO ideas in your inbox.</h2><p>Simple strategies, new guides and practical digital marketing tips.</p></div>
-<form class="form" onsubmit="subscribe(event)"><input type="email" required placeholder="Your email address"><button>Subscribe</button></form>
-</div></div></div></section>
-
-<section class="section" id="contact"><div class="container">
-<div class="section-head"><div><div class="eyebrow">Work with Bukhari SEO</div><h2>Need help growing your website?</h2></div><p>Contact Bukhari SEO directly by email, phone or WhatsApp.</p></div>
-<div class="actions"><a class="btn primary" href="mailto:zshabbirbukhari@gmail.com">Email Bukhari SEO</a><a class="btn secondary" href="tel:+923153878279">Call 0315 3878279</a><a class="btn secondary" href="https://wa.me/923153878279" target="_blank" rel="noopener">WhatsApp</a><a class="btn secondary" href="https://bukhariseo.pk/" target="_blank" rel="noopener">Visit Main Website</a></div>
-</div></section>
-</main>
-
-<footer><div class="container"><div class="footer-grid">
-<div><h3>Bukhari<span style="color:#60a5fa">SEO</span></h3><p>SEO, digital marketing, AI and growth guides for modern websites.</p></div>
-<div><h3>Explore</h3><a href="#latest">Latest Articles</a><a href="#categories">Categories</a><a href="#about">About</a></div>
-<div><h3>Topics</h3><a href="#articles">SEO</a><a href="#articles">Local SEO</a><a href="#articles">AI & SEO</a><a href="#articles">Blogging</a></div>
-<div><h3>Connect</h3><a href="mailto:zshabbirbukhari@gmail.com">zshabbirbukhari@gmail.com</a><a href="tel:+923153878279">0315 3878279</a><a href="https://wa.me/923153878279" target="_blank" rel="noopener">WhatsApp</a><a href="https://bukhariseo.pk/" target="_blank" rel="noopener">Main Website</a></div>
-</div><div class="copyright">© 2026 Bukhari SEO. All rights reserved.</div></div></footer>
-
-<a class="whatsapp" href="https://wa.me/923153878279" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">W</a>
-<script>
-function filterCards(){
- const q=document.getElementById('search').value.toLowerCase().trim();
- let visible=0;
- document.querySelectorAll('#cardGrid .card').forEach(card=>{
-   const show=card.dataset.title.includes(q);
-   card.style.display=show?'block':'none';
-   if(show) visible++;
- });
- document.getElementById('noResults').style.display=(q && visible===0)?'block':'none';
+* {
+  box-sizing: border-box;
 }
-function subscribe(e){
- e.preventDefault();
- const button=e.target.querySelector('button');
- button.textContent='Subscribed ✓';
- e.target.querySelector('input').value='';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #fff;
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+/* HERO */
+
+.hero {
+  padding: 82px 0 70px;
+  background: linear-gradient(180deg, #f8fbff 0%, #fff 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.badge,
+.eyebrow,
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.badge {
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  padding: 7px 12px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5.5vw, 68px);
+  line-height: 1.03;
+  letter-spacing: -.055em;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 19px;
+  color: #64748b;
+  max-width: 650px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 19px;
+  border-radius: 10px;
+  font-weight: 750;
+}
+
+.primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.secondary {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image > img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 30px 70px rgba(15, 23, 42, .16);
+}
+
+.hero-card {
+  position: absolute;
+  left: -28px;
+  bottom: -25px;
+  background: #fff;
+  padding: 20px 22px;
+  border-radius: 15px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, .16);
+  max-width: 300px;
+}
+
+.hero-card strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.25;
+  margin: 7px 0;
+}
+
+.muted {
+  color: #64748b;
+}
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #e2e8f0;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: -25px;
+  position: relative;
+}
+
+.stat {
+  background: #fff;
+  padding: 22px;
+}
+
+.stat b {
+  font-size: 22px;
+  display: block;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 85px 0;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.section-head h2 {
+  font-size: 36px;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  margin: 7px 0 0;
+}
+
+.section-head > p {
+  max-width: 480px;
+  color: #64748b;
+  margin: 0;
+}
+
+.eyebrow {
+  color: #2563eb;
+}
+
+/* FEATURE */
+
+.feature {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.feature-img img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+.feature-body {
+  padding: 42px;
+}
+
+.feature-body h3 {
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 13px 0;
+}
+
+.read {
+  font-weight: 800;
+  color: #2563eb;
+}
+
+/* ARTICLES */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 17px;
+  overflow: hidden;
+  background: #fff;
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .09);
+}
+
+.card-img img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 22px;
+}
+
+.tag {
+  color: #2563eb;
+}
+
+.card h3 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 9px 0;
+}
+
+.card h3 a:hover {
+  color: #2563eb;
+}
+
+.card .muted {
+  font-size: 14px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 17px;
+  padding-top: 13px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* SEARCH */
+
+.search {
+  margin: 0 0 25px;
+}
+
+.search input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+/* CATEGORIES */
+
+.categories {
+  background: #f8fafc;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.cat {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.cat:hover {
+  border-color: #93c5fd;
+}
+
+.cat-icon {
+  font-size: 28px;
+}
+
+.cat h3 {
+  margin: 10px 0 5px;
+}
+
+.cat p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-box {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.about h2 {
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  background: #0b1220;
+  color: #fff;
+  border-radius: 24px;
+  padding: 48px;
+}
+
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.newsletter h2 {
+  font-size: 34px;
+  line-height: 1.15;
+  margin: 8px 0;
+}
+
+.newsletter p {
+  color: #cbd5e1;
+}
+
+.form {
+  display: flex;
+  background: #fff;
+  padding: 6px;
+  border-radius: 11px;
+}
+
+.form input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding: 11px;
+}
+
+.form button {
+  border: 0;
+  background: #2563eb;
+  color: #fff;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+/* CONTACT */
+
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background: #25d366;
+  color: #fff;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 900;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .hero-grid,
+  .feature,
+  .about,
+  .newsletter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image > img {
+    height: 330px;
+  }
+
+  .hero-card {
+    left: 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .grid,
+  .cat-grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    display: block;
+  }
+
+  .section-head > p {
+    margin-top: 12px;
+  }
+
+  .newsletter {
+    padding: 30px 22px;
+  }
+
+  .form {
+    display: block;
+    background: transparent;
+    padding: 0;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+    height: 48px;
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+
+  .feature-body {
+    padding: 28px;
+  }
+
+  .feature-img img {
+    height: 260px;
+  }
+}
+</style>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <span class="badge">● SEO • MARKETING • AI • GROWTH</span>
+
+      <h1>
+        Grow your website.
+        <span style="color:#2563eb">Get found.</span>
+        Get results.
+      </h1>
+
+      <p>
+        Clear, practical guides on SEO, Google, digital marketing,
+        AI and blogging — without the confusing jargon.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#latest">Explore Articles →</a>
+        <a class="btn secondary" href="#categories">Browse Topics</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+        alt="SEO analytics and digital marketing growth">
+
+      <div class="hero-card">
+        <span class="tag">FEATURED GUIDE</span>
+
+        <strong>SEO, Marketing & Growth</strong>
+
+        <div class="muted">
+          Practical strategies to help your website get found,
+          attract visitors and grow.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS -->
+
+<section class="container">
+  <div class="stats">
+
+    <div class="stat">
+      <b>SEO</b>
+      <span>Search visibility & rankings</span>
+    </div>
+
+    <div class="stat">
+      <b>AI</b>
+      <span>Smarter content workflows</span>
+    </div>
+
+    <div class="stat">
+      <b>Google</b>
+      <span>Search & local growth</span>
+    </div>
+
+    <div class="stat">
+      <b>Pakistan</b>
+      <span>Practical local insights</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURED ARTICLE -->
+
+<section class="section" id="latest">
+  <div class="container">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Featured</div>
+        <h2>Start with the guides</h2>
+      </div>
+
+      <p>
+        Evergreen resources designed to answer real search questions
+        and help you take action.
+      </p>
+    </div>
+
+    <article class="feature">
+
+      <div class="feature-img">
+        <img
+          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+          alt="Digital marketing strategy">
+      </div>
+
+      <div class="feature-body">
+        <span class="tag">FEATURED ARTICLE</span>
+
+        <h3>The Complete Guide to SEO in 2026</h3>
+
+        <p class="muted">
+          Learn how modern SEO works, what matters for Google rankings,
+          how content and technical SEO work together, and where AI fits
+          into a sustainable growth strategy.
+        </p>
+
+        <a
+          class="read"
+          href="/post/seo-marketing-2026-complete-guide-to-seo-benefits-strategies-real-growth-examples-in-pakistan/">
+          Read the complete guide →
+        </a>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+<!-- ARTICLES -->
+
+<section class="section" id="articles">
+  <div class="container">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Latest stories</div>
+        <h2>Fresh ideas for your website</h2>
+      </div>
+
+      <p>
+        Practical knowledge covering search, content, AI,
+        local visibility and digital growth.
+      </p>
+    </div>
+
+    <div class="search">
+      <input
+        id="search"
+        type="search"
+        placeholder="Search articles and topics..."
+        oninput="filterCards()">
+    </div>
+
+    <div class="grid" id="cardGrid">
+
+      <article
+        class="card"
+        data-title="complete seo guide search engine optimization">
+
+        <div class="card-img">
+          <img
+            src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=900&q=85"
+            alt="Search engine optimization">
+        </div>
+
+        <div class="card-body">
+          <span class="tag">SEO</span>
+
+          <h3>
+            <a href="/post/seo-marketing-2026-complete-guide-to-seo-benefits-strategies-real-growth-examples-in-pakistan/">
+              The Complete Guide to SEO in 2026
+            </a>
+          </h3>
+
+          <p class="muted">
+            Understand keywords, on-page SEO, technical SEO,
+            links and content strategy from the ground up.
+          </p>
+
+          <div class="meta">
+            <span>SEO guide</span>
+            <span>Bukhari SEO</span>
+          </div>
+        </div>
+
+      </article>
+
+      <article
+        class="card"
+        data-title="google seo ranking">
+
+        <div class="card-img">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85"
+            alt="SEO analytics dashboard">
+        </div>
+
+        <div class="card-body">
+          <span class="tag">GOOGLE</span>
+
+          <h3>
+            <a href="#contact">
+              How to Improve Your Google Rankings
+            </a>
+          </h3>
+
+          <p class="muted">
+            A practical framework for improving relevance,
+            helpfulness, technical quality and user experience.
+          </p>
+
+          <div class="meta">
+            <span>Google SEO</span>
+            <span>Bukhari SEO</span>
+          </div>
+        </div>
+
+      </article>
+
+      <article
+        class="card"
+        data-title="ai seo artificial intelligence">
+
+        <div class="card-img">
+          <img
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85"
+            alt="Artificial intelligence and SEO">
+        </div>
+
+        <div class="card-body">
+          <span class="tag">AI & SEO</span>
+
+          <h3>
+            <a href="#contact">
+              AI for Modern SEO
+            </a>
+          </h3>
+
+          <p class="muted">
+            Use AI for research, ideas, outlines and productivity
+            while keeping your content useful and original.
+          </p>
+
+          <div class="meta">
+            <span>AI strategy</span>
+            <span>Bukhari SEO</span>
+          </div>
+        </div>
+
+      </article>
+
+      <article
+        class="card"
+        data-title="local seo google business profile">
+
+        <div class="card-img">
+          <img
+            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=900&q=85"
+            alt="Local business and local SEO">
+        </div>
+
+        <div class="card-body">
+          <span class="tag">LOCAL SEO</span>
+
+          <h3>
+            <a href="#contact">
+              Local SEO for Small Businesses
+            </a>
+          </h3>
+
+          <p class="muted">
+            Build local visibility with Google Business Profile,
+            local content, reviews and consistent business information.
+          </p>
+
+          <div class="meta">
+            <span>Local SEO</span>
+            <span>Pakistan</span>
+          </div>
+        </div>
+
+      </article>
+
+      <article
+        class="card"
+        data-title="content marketing blogging">
+
+        <div class="card-img">
+          <img
+            src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=85"
+            alt="Content marketing and blogging">
+        </div>
+
+        <div class="card-body">
+          <span class="tag">CONTENT</span>
+
+          <h3>
+            <a href="#contact">
+              Content That Attracts Search Traffic
+            </a>
+          </h3>
+
+          <p class="muted">
+            Turn real customer questions into useful articles
+            that can earn visibility and build trust over time.
+          </p>
+
+          <div class="meta">
+            <span>Content</span>
+            <span>Bukhari SEO</span>
+          </div>
+        </div>
+
+      </article>
+
+      <article
+        class="card"
+        data-title="digital marketing growth">
+
+        <div class="card-img">
+          <img
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=85"
+            alt="Digital marketing growth strategy">
+        </div>
+
+        <div class="card-body">
+          <span class="tag">MARKETING</span>
+
+          <h3>
+            <a href="#contact">
+              Digital Marketing That Converts
+            </a>
+          </h3>
+
+          <p class="muted">
+            Combine search, content, social and conversion strategy
+            into a practical growth system.
+          </p>
+
+          <div class="meta">
+            <span>Growth</span>
+            <span>Bukhari SEO</span>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+    <div
+      id="noResults"
+      style="display:none; text-align:center; margin-top:25px; color:#64748b;">
+      No matching articles found.
+    </div>
+
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="section categories" id="categories">
+  <div class="container">
+
+    <div class="eyebrow">Explore topics</div>
+
+    <h2>Learn what you need, when you need it.</h2>
+
+    <div class="cat-grid">
+
+      <a class="cat" href="#articles">
+        <div class="cat-icon">🔎</div>
+        <h3>SEO</h3>
+        <p>On-page, technical, content and search strategy.</p>
+      </a>
+
+      <a class="cat" href="#articles">
+        <div class="cat-icon">📍</div>
+        <h3>Local SEO</h3>
+        <p>Google Business Profile and local visibility.</p>
+      </a>
+
+      <a class="cat" href="#articles">
+        <div class="cat-icon">🤖</div>
+        <h3>AI & SEO</h3>
+        <p>AI tools, workflows and changing search.</p>
+      </a>
+
+      <a class="cat" href="#articles">
+        <div class="cat-icon">📈</div>
+        <h3>Digital Marketing</h3>
+        <p>Content, social, conversion and growth.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+  <div class="container about">
+
+    <div class="about-box">
+      <div class="eyebrow">About Bukhari SEO</div>
+
+      <h2>Practical knowledge, not marketing fluff.</h2>
+
+      <p class="muted">
+        Bukhari SEO is a publication focused on actionable search
+        and digital marketing knowledge for businesses, website owners
+        and creators.
+      </p>
+
+      <a class="read" href="#contact">
+        Talk to us →
+      </a>
+    </div>
+
+    <div>
+      <h2>Built for readers first.</h2>
+
+      <p class="muted">
+        Useful articles stay at the center, with clear categories,
+        strong visuals, readable typography, responsive layouts
+        and a modern professional identity.
+      </p>
+
+      <p class="muted">
+        From SEO and Google to AI, local search and content marketing,
+        the goal is simple: explain what matters and show you what to do next.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+
+<section class="section" id="newsletter">
+  <div class="container">
+
+    <div class="newsletter">
+
+      <div class="newsletter-grid">
+
+        <div>
+          <div class="eyebrow" style="color:#93c5fd">
+            Stay ahead
+          </div>
+
+          <h2>Get useful SEO ideas in your inbox.</h2>
+
+          <p>
+            Simple strategies, new guides and practical digital marketing tips.
+          </p>
+        </div>
+
+        <form class="form" onsubmit="subscribe(event)">
+
+          <input
+            type="email"
+            required
+            placeholder="Your email address">
+
+          <button type="submit">
+            Subscribe
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-head">
+
+      <div>
+        <div class="eyebrow">Work with Bukhari SEO</div>
+
+        <h2>Need help growing your website?</h2>
+      </div>
+
+      <p>
+        Contact Bukhari SEO directly by email, phone or WhatsApp.
+      </p>
+
+    </div>
+
+    <div class="contact-buttons">
+
+      <a
+        class="btn primary"
+        href="mailto:zshabbirbukhari@gmail.com">
+        Email Bukhari SEO
+      </a>
+
+      <a
+        class="btn secondary"
+        href="tel:+923153878279">
+        Call 0315 3878279
+      </a>
+
+      <a
+        class="btn secondary"
+        href="https://wa.me/923153878279"
+        target="_blank"
+        rel="noopener">
+        WhatsApp
+      </a>
+
+      <a
+        class="btn secondary"
+        href="https://bukhariseo.pk/"
+        target="_blank"
+        rel="noopener">
+        Visit Main Website
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/923153878279"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat on WhatsApp">
+  W
+</a>
+
+<script>
+function filterCards() {
+  const input = document.getElementById("search");
+  const q = input.value.toLowerCase().trim();
+
+  let visible = 0;
+
+  document.querySelectorAll("#cardGrid .card").forEach(function(card) {
+    const title = card.dataset.title.toLowerCase();
+    const show = title.includes(q);
+
+    card.style.display = show ? "" : "none";
+
+    if (show) {
+      visible++;
+    }
+  });
+
+  document.getElementById("noResults").style.display =
+    q && visible === 0 ? "block" : "none";
+}
+
+function subscribe(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const button = form.querySelector("button");
+  const input = form.querySelector("input");
+
+  button.textContent = "Subscribed ✓";
+  input.value = "";
 }
 </script>
-</body>
-</html>
+
+{{ end }}
