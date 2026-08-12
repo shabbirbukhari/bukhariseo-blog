@@ -1,5 +1,9 @@
 ---
 title: "SEO in 2026: The Complete Guide to SEO, Strategies, Benefits and Real Growth"
+date: 2026-08-12
+draft: false
+description: "A complete guide to SEO in 2026, including SEO strategies, technical SEO, local SEO, AI, keyword research, content, and practical growth strategies."
+---
 description: "Learn how SEO works in 2026, including modern SEO strategies, technical SEO, content optimization, local SEO, AI search, link building, and practical ways to grow organic traffic."
 date: 2026-08-12
 draft: false
