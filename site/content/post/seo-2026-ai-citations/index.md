@@ -1,6 +1,7 @@
 ---
 title: "SEO in 2026: How to Get Cited by AI, Rank in Google & Grow in Pakistan - The New Playbook"
-date: 2026-09-04T10:00:00+05:00
+date: 2026-09-05T10:00:00+05:00
+weight: 1
 draft: false
 description: "Clear, practical guide on how SEO changed after AI Overviews took over Google — with data from 2026. Framework: Retrieved → Cited → Trusted."
 tags: ["SEO", "AI SEO", "Local SEO", "Pakistan"]
