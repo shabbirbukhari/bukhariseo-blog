@@ -52,3 +52,18 @@ For an icon named `icons-facebook.svg`, refer to the SVG `social-icon` partial l
 ```
 {{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "Kaldi on Facebook") }}
 ```
+
+
+## Preview the website on Windows before deployment
+
+Do not double-click `site/static/index.html` to preview this project. The website uses root-relative paths such as `/assets/site.css` and `/images/post1.webp`; these are intended to be served from the website root and may not load under a `file:///` address.
+
+1. Extract the complete ZIP.
+2. Open the extracted `bukhariseo-blog-main` folder.
+3. Double-click `PREVIEW-LOCALLY.bat`.
+4. Your browser should open `http://127.0.0.1:8000/`.
+5. Keep the black server window open while previewing. Close it when finished.
+
+This local preview helper does not modify the website HTML, CSS, images, Netlify configuration, or Google Analytics code. It uses Python's built-in local web server. If Python is not installed, install it from https://www.python.org/downloads/ and select the option to add Python to PATH during setup.
+
+For deployment, keep the existing Netlify publish directory `site/static`.
